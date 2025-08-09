@@ -1,0 +1,75 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*PRIMERA SECCION PORTADA*/
+
+.contenedor-imagenes-portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.portada-img {
+    width: 450px;  
+    height: 480px; 
+    object-fit: cover; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subtitulo-portada {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.texto-portada {
+    color: rgb(104, 104, 104);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+button {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*SEGUNDA SECCION PORTADA*/
