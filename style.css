@@ -72,7 +72,7 @@ a {
     text-decoration: none;
 }
 
-/*SEGUNDA SECCION PORTADA*/
+/*SEGUNDA SECCION SOBRE MI*/
 
 .subtitulo-sobre-mi {
     font-size: 100px;
@@ -92,6 +92,296 @@ a {
     width: 920px;
     height: 530px;
     margin-top: -450px;
-    margin-right: 130px;
+    margin-right: 150px;
     border-radius: 8px; 
 }
+
+/*TERCERA SECCION PORTAFOLIO*/
+
+.subtitulo-portafolio {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.cards-container {
+    width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin-top: 100px;
+    margin-left: 280px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+   transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 0 15px 15px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    padding: 25px;
+    justify-content: center; 
+    gap: 110px;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*CUARTA SECCION HABILIDADES*/
+
+.contenedor-habilidades {
+    width: 100%;
+    height: 650px;
+    background-color: black;
+    margin-top: 300px;
+}
+
+.subtitulo-habilidades {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.lista-habilidades-tecnicas {
+    color: white;
+    font-size: 28px;
+    float: left;
+    margin-top: 120px;
+    margin-left: 300px;
+}
+
+.lista-habilidades-blandas {
+    color: white;
+    font-size: 28px;
+    float: right;
+    margin-top: 120px;
+    margin-right: 300px;
+}
+
+li {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.linea-vertical {
+    width: 2px;              
+    height: 300px;           
+    background-color: white;  
+    margin: 110px 910px;            
+}
+
+/*QUINTA SECCION CERTIFICADOS*/
+
+.certifications-section {
+    padding: 40px 20px;
+    background: #f8f9fb;
+    color: #222;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+    margin-top: 60px;
+}
+
+.cert-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+    border: 1px solid rgba(16, 24, 40, 0.04);
+}
+
+.cert-title {
+    font-size: 18px;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #111827;
+}
+
+.cert-title i { 
+    font-size: 18px;
+    color: #0f172a;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #374151;
+}
+
+.cert-list li {
+    margin-bottom: 10px;
+}
+
+.cert-list li strong {
+    color: #111827;
+}
+
+.sexta-card {
+    margin-top: -540px;
+    height: 330px;
+}
+
+.quinta-card {
+    margin-top: -245px;
+}
+
+.novena-card {
+    margin-top: -200px;
+    height: 100px;
+}
+
+/*SEXTA SECCION CONTACTO*/
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.contact-section h2 {
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-links {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    transform: scale(1.05);
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #181818;          
+  color: #eee;                   
+  text-align: center;             
+  padding: 15px 0;                
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3); 
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
