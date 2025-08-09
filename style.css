@@ -73,3 +73,25 @@ a {
 }
 
 /*SEGUNDA SECCION PORTADA*/
+
+.subtitulo-sobre-mi {
+    font-size: 100px;
+    margin-top: 300px;
+    margin-left: 150px;
+}
+
+.texto-sobre-mi {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 150px;
+    color: rgb(77, 77, 77);
+}
+
+.imagen-sobre-mi {
+    float: right;
+    width: 920px;
+    height: 530px;
+    margin-top: -450px;
+    margin-right: 130px;
+    border-radius: 8px; 
+}
