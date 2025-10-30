@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energym</title>
+  
+  <!-- CSS de Bootstrap -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="css/proyecto2.css">
+</head>
+<body>
+    <nav>
+        <a href="/index.html"> <-- Atrás</a>
+        <h2>Energym</h2>
+    </nav>
+
+    <!-- Section 1 -->
+    <section class="inicio-energym">
+        <h1>Energym – Página Web y Tienda Online de Gimnasio</h1>
+
+        <h2>Descripción:</h2>
+        <p>
+            Energym es una plataforma web diseñada para un gimnasio moderno que combina <br>
+            información sobre sus servicios, entrenadores y clases, junto con una tienda online <br>
+            donde los usuarios pueden adquirir productos deportivos. El sistema incluye un <br>
+            carrito de compras totalmente funcional que permite agregar, eliminar y actualizar <br>
+            productos en tiempo real, mostrando los cambios de precio de forma automática.
+        </p>
+
+        <h2>Tecnologías utilizadas:</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h2>Mi función:</h2>
+        <ul>
+            <li>Desarrollo completo del proyecto de manera individual, implementando tanto <br>
+                la parte informativa del gimnasio como la funcionalidad de la tienda online.</li>
+            <li>Programación del carrito de compras con actualización dinámica de precios <br>
+                y manejo de productos seleccionados por el usuario.</li>
+            <li>Diseño y maquetación con enfoque visual energético, moderno y responsive <br>
+                para ofrecer una experiencia de usuario atractiva en cualquier dispositivo.</li>
+        </ul>
+    </section>
+
+
+  <!-- Section 2 -->
+  <section class="section-imagenes">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/segundo-proyecto-portafolio.png" class="d-block w-100" alt="imagen de Habitat 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio2.png" class="d-block w-100" alt="imagen de Habitat 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio3.png" class="d-block w-100" alt="imagen de Habitat 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio4.png" class="d-block w-100" alt="imagen de Habitat 4">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio5.png" class="d-block w-100" alt="imagen de Habitat 5">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio6.png" class="d-block w-100" alt="imagen de Habitat 6">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio7.png" class="d-block w-100" alt="imagen de Habitat 6">
+        </div>
+        <div class="carousel-item">
+          <img src="img/segundo-proyecto-portafolio8.png" class="d-block w-100" alt="imagen de Habitat 6">
+        </div>
+      </div>
+
+      <!-- Botones de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para iniciar el carrusel -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const carouselElement = document.querySelector('#carouselExample');
+      new bootstrap.Carousel(carouselElement, {
+        interval: 3000, 
+        ride: 'carousel',
+        wrap: true       
+      });
+    });
+  </script>
+
+</body>
+</html>

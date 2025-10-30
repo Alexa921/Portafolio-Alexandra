@@ -102,22 +102,22 @@ a {
 .subtitulo-sobre-mi {
     font-size: 100px;
     margin-top: 400px;
-    margin-left: 1150px; /* movemos el texto a la derecha */
+    margin-left: 1150px; 
 }
 
 .texto-sobre-mi {
     font-size: 18px;
     margin-top: 50px;
-    margin-left: 1150px; /* también movemos el párrafo a la derecha */
+    margin-left: 1150px; 
     color: rgb(77, 77, 77);
 }
 
 .imagen-sobre-mi {
-    float: left; /* cambiamos a la izquierda */
+    float: left; 
     width: 920px;
     height: 530px;
     margin-top: -520px;
-    margin-left: 120px; /* antes era margin-right, ahora al revés */
+    margin-left: 120px; 
     border-radius: 8px; 
 }
 
@@ -388,6 +388,7 @@ li {
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-left: 130px;
 }
 
 .contact-form button:hover {
