@@ -114,3 +114,124 @@ nav a:hover {
 .carousel-control-next-icon {
   background-color: transparent;
 }
+
+/* ======================================= */
+/* 📱 1. MÓVIL Y TABLET PEQUEÑA (Max-width: 768px) */
+/* Diseño vertical y fluido */
+/* ======================================= */
+@media screen and (max-width: 768px) {
+
+    /* --- NAV --- */
+    nav {
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    nav h2 {
+        /* Eliminamos el margen fijo que lo saca de la pantalla */
+        margin-top: 0; 
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        /* Reducimos el margen y permitimos que se ajusten */
+        margin: 0 10px; 
+        font-size: 16px;
+        display: inline-block; /* Permite espaciar los enlaces */
+    }
+
+    /* --- CONTENEDOR PRINCIPAL --- */
+    .contenedor-principal {
+        /* La clave: forzar el apilamiento vertical */
+        flex-direction: column; 
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /* --- SECCIÓN DE TEXTO --- */
+    .inicio-habitat {
+        flex: auto; /* Permite que ocupe todo el ancho */
+        padding: 15px;
+    }
+
+    .inicio-habitat h1 {
+        font-size: 30px; /* Título principal más pequeño */
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .inicio-habitat h2 {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .inicio-habitat p,
+    .inicio-habitat ul {
+        font-size: 16px; /* Texto de cuerpo más legible en móvil */
+    }
+    
+    /* --- CARRUSEL --- */
+    .section-imagenes {
+        /* Eliminamos el posicionamiento y márgenes negativos/fijos */
+        position: static; 
+        margin-top: 0; 
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .carousel {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* ======================================= */
+/* 💻 2. TABLET Y DESKTOP MEDIANO (min-width: 769px y max-width: 1200px) */
+/* Diseño de dos columnas, pero más compacto */
+/* ======================================= */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    /* --- NAV --- */
+    nav h2 {
+        /* Reajustamos la posición para pantallas medianas */
+        margin-left: 600px; 
+    }
+
+    /* --- CONTENEDOR PRINCIPAL --- */
+    .contenedor-principal {
+        /* Mantenemos el flex row, pero con un max-width menor */
+        max-width: 1000px; 
+        padding: 20px;
+    }
+
+    /* --- SECCIÓN DE TEXTO --- */
+    .inicio-habitat {
+        padding: 30px;
+    }
+    
+    /* --- CARRUSEL --- */
+    .section-imagenes {
+        /* Ajustamos la posición para que no se superponga tanto */
+        margin-top: -400px; 
+        margin-left: 550px; /* Desplazamiento ajustado */
+    }
+
+    .carousel {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* ======================================= */
+/* 🖥️ 3. DESKTOP GRANDE (min-width: 1201px) */
+/* Los estilos base originales son aplicables aquí */
+/* Aseguramos que el contenedor ocupe la pantalla */
+/* ======================================= */
+@media screen and (min-width: 1201px) {
+     .contenedor-principal {
+        max-width: 1400px;
+     }
+}
