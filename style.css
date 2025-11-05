@@ -437,6 +437,229 @@ footer p {
 }
 
 
+/* ======================================= */
+/* 📱 1. TABLET GRANDE (Max-width: 1200px) */
+/* Se ajustan elementos muy anchos/desplazados */
+/* ======================================= */
+@media screen and (max-width: 1200px) {
+
+    /* --- PRIMERA SECCIÓN PORTADA --- */
+    .bloque-textos-portada {
+        /* Reducimos el desplazamiento y el ancho para dar espacio */
+        left: 80px;
+        width: 500px;
+    }
+
+    .bloque-textos-portada h1 {
+        /* Reducimos el título principal */
+        font-size: 80px;
+    }
+
+    /* Ajustamos la posición de las imágenes superpuestas */
+    .portada-img1 {
+        left: 850px;
+        width: 380px;
+        height: 380px;
+    }
+
+    .portada-img2 {
+        left: 750px;
+        width: 550px;
+        height: 650px;
+    }
+
+    /* --- TERCERA SECCIÓN PORTAFOLIO --- */
+    .cards-container {
+        /* Hacemos el contenedor más pequeño y centrado */
+        width: 900px;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+        gap: 50px;
+        margin-left: auto; /* Centrar */
+        margin-right: auto;
+    }
+    
+    /* --- CUARTA SECCIÓN HABILIDADES --- */
+    .lista-habilidades-tecnicas {
+        /* Reducimos el margen para acercar las listas */
+        margin-left: 150px;
+    }
+
+    .lista-habilidades-blandas {
+        margin-right: 150px;
+    }
+    
+    .linea-vertical {
+        /* Ajustamos la posición de la línea */
+        margin: 110px 600px; 
+    }
+    
+    /* --- QUINTA SECCIÓN CERTIFICADOS --- */
+    .cert-grid {
+        max-width: 900px;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ======================================= */
+/* 📱 2. MÓVIL Y TABLET PEQUEÑA (Max-width: 768px) */
+/* Diseño en columna vertical para legibilidad */
+/* ======================================= */
+@media screen and (max-width: 768px) {
+
+    /* Ajuste de fuentes y márgenes generales */
+    .subtitulo-portafolio, .subtitulo-habilidades, .section-title {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    
+    /* --- PRIMERA SECCIÓN PORTADA --- */
+    .contenedor-imagenes-portada {
+        height: auto; /* Altura flexible */
+        padding-bottom: 50px;
+    }
+
+    .bloque-textos-portada {
+        position: static; /* Quitamos el posicionamiento absoluto */
+        width: 90%; /* Hacemos el texto fluido */
+        margin: 20px auto 0; /* Centramos */
+        text-align: center;
+        top: auto;
+        left: auto;
+    }
+
+    .bloque-textos-portada h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    
+    /* Ocultamos la imagen de fondo y hacemos la otra fluida */
+    .portada-img2 {
+        display: none;
+    }
+
+    .portada-img1 {
+        position: static; /* Quitamos absoluto */
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 30px auto;
+        left: auto;
+        top: auto;
+    }
+    
+    /* --- SEGUNDA SECCIÓN SOBRE MI --- */
+    .subtitulo-sobre-mi {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .texto-sobre-mi {
+        margin-left: 5%; /* Márgenes laterales fluidos */
+        margin-right: 5%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .imagen-sobre-mi {
+        float: none;
+        width: 90%;
+        height: auto;
+        margin: 30px auto; /* Centramos */
+    }
+
+    /* --- TERCERA SECCIÓN PORTAFOLIO --- */
+    .cards-container {
+        width: 90%;
+        grid-template-columns: 1fr; /* Una sola columna */
+        margin-left: 5%;
+    }
+    
+    .buttons {
+        gap: 30px;
+    }
+
+    /* --- CUARTA SECCIÓN HABILIDADES --- */
+    .contenedor-habilidades {
+        height: auto; /* Altura flexible */
+        padding-bottom: 50px;
+    }
+
+    .lista-habilidades-tecnicas, .lista-habilidades-blandas {
+        float: none; /* Quitamos flotantes */
+        margin: 30px 5%; /* Centramos y añadimos espacio */
+        text-align: center;
+        width: 90%;
+    }
+    
+    .linea-vertical {
+        display: none; /* Ocultamos en móvil */
+    }
+    
+    /* --- QUINTA SECCIÓN CERTIFICADOS --- */
+    .cert-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+        max-width: 90%;
+    }
+
+    .sexta-card, .quinta-card, .novena-card {
+        /* Quitamos ajustes de margen fijo que causaban desorden */
+        margin-top: 0;
+        height: auto;
+    }
+
+    /* --- SEXTA SECCIÓN CONTACTO --- */
+    .contact-form button {
+        /* El botón de contacto debe ocupar el ancho completo del formulario */
+        margin-left: 0; 
+    }
+    
+    .contact-links {
+        margin-bottom: 50px;
+    }
+    .contact-form button {
+        margin-left: 80px;
+    }
+}
+
+/* ======================================= */
+/* 📱 AJUSTE FINO DE TÍTULOS EN MOBILE */
+/* ======================================= */
+@media screen and (max-width: 768px) {
+
+    /* Títulos principales de sección */
+    .subtitulo-portafolio, 
+    .subtitulo-habilidades, 
+    .section-title {
+        /* Reducidos de 50px a 35px para mejor legibilidad en móvil */
+        font-size: 35px;
+        margin-top: 40px; /* Pequeño ajuste en el margen superior */
+        margin-bottom: 20px;
+    }
+
+    /* Título de Portada (el más grande originalmente) */
+    .bloque-textos-portada h1 {
+        /* Reducido de 50px a 40px */
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    /* Subtítulo 'Sobre Mí' */
+    .subtitulo-sobre-mi {
+        /* Reducido de 50px a 40px */
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* Título de Contacto (era 60px) */
+    .contact-section h2 {
+        font-size: 30px;
+    }
+}
+
 
 
 
